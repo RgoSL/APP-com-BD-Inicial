@@ -42,6 +42,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Tela() {
     var nome = ""
+    var tel = ""
     Column(
         Modifier
             .background(Color.White)
@@ -61,7 +62,7 @@ fun Tela() {
             Text(
 
                 text = "App DataBase",
-                fontFamily = FontFamily.Serif,
+                fontFamily = FontFamily.Cursive,
                 fontWeight = FontWeight.Bold,
                 fontSize = 30.sp
             )
@@ -96,9 +97,9 @@ fun Tela() {
         ) {
             TextField(
 
-                value = nome,
-                onValueChange = { nome = it },
-                label = { Text(text = "Nome: ") }
+                value = tel,
+                onValueChange = { tel = it },
+                label = { Text(text = "Telefone: ") }
 
             )
         }
